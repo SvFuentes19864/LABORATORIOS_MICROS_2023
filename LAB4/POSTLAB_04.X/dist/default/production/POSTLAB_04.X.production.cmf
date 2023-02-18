@@ -1,0 +1,279 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/POSTLAB_04.o
+udata RAM 1 20 20 7 1 1
+CODE - 0 0 0 280 2 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 27-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 27-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 280-1FFF 2
+ENTRY 280-1FFF 2
+IDLOC 2000-2003 2
+CODE 280-1FFF 2
+COMMON 70-7F 1
+EEDATA 2100-21FF 2
+STRCODE 280-1FFF 2
+STRING 280-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/POSTLAB_04.o
+0 CODE ABS >61:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+0 CODE ABS >62:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+1 CODE ABS >67:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+4 CODE ABS >70:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+5 CODE ABS >71:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+6 CODE ABS >72:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+7 CODE ABS >79:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+8 CODE ABS >80:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+9 CODE ABS >82:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+A CODE ABS >89:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+B CODE ABS >90:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+C CODE ABS >92:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+D CODE ABS >95:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+E CODE ABS >96:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+F CODE ABS >97:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+10 CODE ABS >98:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+11 CODE ABS >99:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+12 CODE ABS >104:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+100 CODE ABS >107:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+101 CODE ABS >108:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+102 CODE ABS >109:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+103 CODE ABS >110:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+104 CODE ABS >111:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+105 CODE ABS >112:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+106 CODE ABS >113:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+107 CODE ABS >114:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+108 CODE ABS >115:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+109 CODE ABS >116:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+10A CODE ABS >117:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+10B CODE ABS >118:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+10C CODE ABS >119:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+10D CODE ABS >120:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+10E CODE ABS >121:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+10F CODE ABS >129:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+200 CODE ABS >132:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+201 CODE ABS >133:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+202 CODE ABS >134:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+203 CODE ABS >135:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+204 CODE ABS >136:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+205 CODE ABS >138:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+207 CODE ABS >139:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+208 CODE ABS >140:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+209 CODE ABS >141:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+20A CODE ABS >142:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+20B CODE ABS >143:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+20C CODE ABS >144:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+20D CODE ABS >145:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+20E CODE ABS >146:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+20F CODE ABS >154:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+210 CODE ABS >155:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+212 CODE ABS >156:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+213 CODE ABS >157:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+215 CODE ABS >158:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+216 CODE ABS >160:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+217 CODE ABS >161:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+219 CODE ABS >162:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+21A CODE ABS >163:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+21C CODE ABS >164:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+21D CODE ABS >166:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+21E CODE ABS >167:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+21F CODE ABS >168:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+220 CODE ABS >169:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+221 CODE ABS >170:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+222 CODE ABS >171:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+223 CODE ABS >173:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+224 CODE ABS >174:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+225 CODE ABS >175:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+226 CODE ABS >176:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+227 CODE ABS >177:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+228 CODE ABS >178:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+229 CODE ABS >179:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+22A CODE ABS >182:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+22B CODE ABS >183:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+22C CODE ABS >184:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+22D CODE ABS >185:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+22E CODE ABS >186:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+22F CODE ABS >188:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+230 CODE ABS >189:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+231 CODE ABS >190:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+232 CODE ABS >191:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+233 CODE ABS >192:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+234 CODE ABS >195:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+235 CODE ABS >196:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+236 CODE ABS >197:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+237 CODE ABS >199:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+238 CODE ABS >205:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+23A CODE ABS >206:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+23B CODE ABS >207:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+23C CODE ABS >209:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+23E CODE ABS >210:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+23F CODE ABS >211:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+240 CODE ABS >212:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+241 CODE ABS >213:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+242 CODE ABS >214:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+243 CODE ABS >215:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+244 CODE ABS >217:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+245 CODE ABS >220:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+247 CODE ABS >221:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+248 CODE ABS >222:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+249 CODE ABS >223:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+24A CODE ABS >224:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+24B CODE ABS >226:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+24C CODE ABS >229:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+24E CODE ABS >230:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+24F CODE ABS >231:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+250 CODE ABS >232:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+251 CODE ABS >233:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+252 CODE ABS >234:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+253 CODE ABS >235:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+254 CODE ABS >237:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+255 CODE ABS >240:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+257 CODE ABS >241:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+258 CODE ABS >242:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+259 CODE ABS >243:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+25A CODE ABS >245:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+25B CODE ABS >246:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+25C CODE ABS >247:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+25D CODE ABS >249:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+25F CODE ABS >250:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+260 CODE ABS >251:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+261 CODE ABS >252:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+262 CODE ABS >254:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+263 CODE ABS >257:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+265 CODE ABS >258:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+266 CODE ABS >259:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+267 CODE ABS >261:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+269 CODE ABS >262:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+26A CODE ABS >263:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+26B CODE ABS >265:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+26C CODE ABS >273:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+26E CODE ABS >274:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+26F CODE ABS >275:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+270 CODE ABS >276:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+271 CODE ABS >278:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+272 CODE ABS >280:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+273 CODE ABS >285:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+274 CODE ABS >286:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+275 CODE ABS >287:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+276 CODE ABS >288:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+277 CODE ABS >289:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+278 CODE ABS >290:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+279 CODE ABS >293:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+27A CODE ABS >294:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+27B CODE ABS >295:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+27C CODE ABS >296:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+27D CODE ABS >297:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+27E CODE ABS >298:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+27F CODE ABS >300:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB4\POSTLAB_04.X\POSTLAB_04.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 280 0 ABS 0 - -
+__Hspace_1 27 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__HCODE 500 0 ABS 0 CODE -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__LCODE 0 0 ABS 0 CODE -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 27 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata 1 20 20 7 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
