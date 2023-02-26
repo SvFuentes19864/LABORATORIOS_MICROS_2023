@@ -1,0 +1,280 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/LAB_05.o
+udata RAM 1 20 20 8 1 1
+CODE - 0 0 0 277 2 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 28-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 28-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 277-1FFF 2
+ENTRY 277-1FFF 2
+IDLOC 2000-2003 2
+CODE 277-1FFF 2
+COMMON 70-7F 1
+EEDATA 2100-21FF 2
+STRCODE 277-1FFF 2
+STRING 277-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/LAB_05.o
+0 CODE ABS >65:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+0 CODE ABS >66:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+1 CODE ABS >71:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+4 CODE ABS >74:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+5 CODE ABS >75:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+6 CODE ABS >76:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+7 CODE ABS >83:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+8 CODE ABS >84:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+9 CODE ABS >86:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+A CODE ABS >88:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+B CODE ABS >95:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+C CODE ABS >96:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+D CODE ABS >98:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+E CODE ABS >101:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+F CODE ABS >102:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+10 CODE ABS >103:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+11 CODE ABS >104:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+12 CODE ABS >105:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+13 CODE ABS >111:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+100 CODE ABS >114:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+101 CODE ABS >115:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+102 CODE ABS >116:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+103 CODE ABS >117:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+104 CODE ABS >118:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+105 CODE ABS >119:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+106 CODE ABS >120:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+107 CODE ABS >121:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+108 CODE ABS >122:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+109 CODE ABS >123:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+10A CODE ABS >124:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+10B CODE ABS >125:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+10C CODE ABS >126:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+10D CODE ABS >127:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+10E CODE ABS >128:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+10F CODE ABS >129:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+110 CODE ABS >130:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+111 CODE ABS >131:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+112 CODE ABS >132:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+113 CODE ABS >133:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+114 CODE ABS >136:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+200 CODE ABS >139:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+201 CODE ABS >140:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+202 CODE ABS >141:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+203 CODE ABS >142:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+204 CODE ABS >143:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+205 CODE ABS >145:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+207 CODE ABS >146:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+208 CODE ABS >147:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+209 CODE ABS >148:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+20A CODE ABS >149:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+20B CODE ABS >150:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+20C CODE ABS >151:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+20D CODE ABS >152:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+20E CODE ABS >153:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+20F CODE ABS >154:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+210 CODE ABS >155:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+211 CODE ABS >163:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+212 CODE ABS >164:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+213 CODE ABS >166:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+214 CODE ABS >172:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+216 CODE ABS >173:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+217 CODE ABS >174:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+218 CODE ABS >176:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+21A CODE ABS >177:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+21B CODE ABS >178:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+21C CODE ABS >179:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+21D CODE ABS >180:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+21E CODE ABS >181:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+21F CODE ABS >182:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+220 CODE ABS >184:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+221 CODE ABS >187:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+223 CODE ABS >188:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+224 CODE ABS >189:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+225 CODE ABS >190:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+226 CODE ABS >191:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+227 CODE ABS >193:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+228 CODE ABS >196:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+22A CODE ABS >197:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+22B CODE ABS >198:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+22C CODE ABS >199:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+22D CODE ABS >200:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+22E CODE ABS >201:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+22F CODE ABS >202:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+230 CODE ABS >204:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+231 CODE ABS >207:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+233 CODE ABS >208:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+234 CODE ABS >209:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+235 CODE ABS >211:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+236 CODE ABS >212:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+237 CODE ABS >214:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+238 CODE ABS >215:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+239 CODE ABS >216:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+23A CODE ABS >218:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+23C CODE ABS >219:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+23D CODE ABS >221:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+23E CODE ABS >224:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+240 CODE ABS >225:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+241 CODE ABS >226:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+242 CODE ABS >228:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+244 CODE ABS >229:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+245 CODE ABS >230:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+246 CODE ABS >232:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+247 CODE ABS >240:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+248 CODE ABS >241:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+249 CODE ABS >242:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+24A CODE ABS >246:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+24B CODE ABS >247:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+24C CODE ABS >248:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+24D CODE ABS >249:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+24E CODE ABS >253:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+24F CODE ABS >254:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+250 CODE ABS >255:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+251 CODE ABS >259:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+252 CODE ABS >260:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+253 CODE ABS >262:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+254 CODE ABS >269:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+255 CODE ABS >270:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+256 CODE ABS >271:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+257 CODE ABS >272:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+258 CODE ABS >273:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+259 CODE ABS >274:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+25A CODE ABS >276:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+25B CODE ABS >283:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+25C CODE ABS >284:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+25D CODE ABS >285:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+25E CODE ABS >287:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+25F CODE ABS >288:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+260 CODE ABS >289:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+261 CODE ABS >291:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+262 CODE ABS >299:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+264 CODE ABS >300:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+265 CODE ABS >301:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+266 CODE ABS >302:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+267 CODE ABS >304:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+268 CODE ABS >309:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+269 CODE ABS >310:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+26A CODE ABS >311:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+26B CODE ABS >312:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+26C CODE ABS >313:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+26D CODE ABS >314:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+26E CODE ABS >317:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+26F CODE ABS >318:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+270 CODE ABS >319:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+271 CODE ABS >320:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+272 CODE ABS >321:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+273 CODE ABS >322:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+274 CODE ABS >324:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+275 CODE ABS >325:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+276 CODE ABS >327:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Laboratorios\LAB5\LAB_05.X\LAB_05.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 277 0 ABS 0 - -
+__Hspace_1 28 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__HCODE 4EE 0 ABS 0 CODE -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__LCODE 0 0 ABS 0 CODE -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 28 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata 1 20 20 8 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
