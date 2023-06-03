@@ -1,0 +1,1031 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\PROYECTO_02.X.production.o
+cinit CODE 0 13 13 24 2 1
+idloc IDLOC 5 2000 2000 4 2 1
+text1 CODE 0 4F5 4F5 EA 2 1
+text2 CODE 0 791 791 3C 2 1
+text3 CODE 0 74B 74B 46 2 1
+text4 CODE 0 F35 F35 1E 2 1
+text5 CODE 0 EE7 EE7 C 2 1
+text6 CODE 0 F00 F00 D 2 1
+text7 CODE 0 3DE 3DE 1F 2 1
+text8 CODE 0 F1F F1F 16 2 1
+text9 CODE 0 7CD 7CD 29 2 1
+text10 CODE 0 6B1 6B1 4F 2 1
+text11 CODE 0 3A5 3A5 39 2 1
+text12 CODE 0 F78 F78 27 2 1
+text13 CODE 0 5DF 5DF 69 2 1
+text14 CODE 0 EF3 EF3 D 2 1
+text15 CODE 0 F9F F9F 28 2 1
+text16 CODE 0 7F6 7F6 A 2 1
+text17 CODE 0 292 292 113 2 1
+text18 CODE 0 700 700 4B 2 1
+text19 CODE 0 F53 F53 25 2 1
+text20 CODE 0 648 648 69 2 1
+text21 CODE 0 FC7 FC7 39 2 1
+text22 CODE 0 F0D F0D 12 2 1
+maintext CODE 0 37 37 25B 2 1
+cstackCOMMON COMMON 1 70 70 D 1 1
+cstackBANK0 BANK0 1 20 20 29 1 1
+cstackBANK1 BANK1 1 A0 A0 C 1 1
+intentry CODE 0 4 4 C 2 1
+bssBANK0 BANK0 1 49 49 1B 1 1
+bssBANK1 BANK1 1 AC AC 8 1 1
+idataBANK1 CODE 0 3FD 3FD 2 2 1
+strings STRING 0 400 400 F5 2 1
+dataBANK1 BANK1 1 B4 B4 2 1 1
+clrtext CODE 0 EDF EDF 8 2 1
+bssCOMMON COMMON 1 7D 7D 1 1 1
+config CONFIG 4 2007 2007 2 2 1
+$C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+idloc IDLOC 5 2000 2000 4 2 1
+reset_vec CODE 0 0 0 3 2 1
+end_init CODE 0 10 10 3 2 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 64-6F 1
+RAM B6-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 64-6F 1
+BANK1 B6-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 3FF-3FF 2
+CONST 800-EDE 2
+CONST 1000-1FFF 2
+ENTRY 3-3 2
+ENTRY 3FF-3FF 2
+ENTRY 800-EDE 2
+ENTRY 1000-1FFF 2
+CODE 3-3 2
+CODE 3FF-3FF 2
+CODE 800-EDE 2
+CODE 1000-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 3FF-3FF 2
+STRCODE 800-EDE 2
+STRCODE 1000-1FFF 2
+STRING 3-3 2
+STRING 3FF-3FF 2
+STRING 800-EDE 2
+STRING 1000-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\PROYECTO_02.X.production.o
+13 cinit CODE >870:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+13 cinit CODE >873:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+13 cinit CODE >965:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+14 cinit CODE >966:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+15 cinit CODE >967:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+1A cinit CODE >968:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+1B cinit CODE >969:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+20 cinit CODE >970:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+21 cinit CODE >989:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+22 cinit CODE >990:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+23 cinit CODE >991:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+24 cinit CODE >992:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+25 cinit CODE >993:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+2A cinit CODE >996:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+2B cinit CODE >997:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+2C cinit CODE >998:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+2D cinit CODE >999:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+32 cinit CODE >1002:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+33 cinit CODE >1008:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+33 cinit CODE >1010:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+34 cinit CODE >1011:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+4 intentry CODE >194:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F0D text22 CODE >126:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F0D text22 CODE >128:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F0D text22 CODE >130:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F11 text22 CODE >131:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F14 text22 CODE >132:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F15 text22 CODE >133:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F1A text22 CODE >133:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F1C text22 CODE >133:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F1E text22 CODE >135:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FC7 text21 CODE >99:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FC7 text21 CODE >101:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FC7 text21 CODE >102:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FCD text21 CODE >104:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FD3 text21 CODE >106:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FD7 text21 CODE >107:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FD9 text21 CODE >108:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FDC text21 CODE >109:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FDD text21 CODE >110:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FDE text21 CODE >111:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FE0 text21 CODE >112:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FE2 text21 CODE >113:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FE3 text21 CODE >115:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FE4 text21 CODE >117:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FED text21 CODE >119:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FF1 text21 CODE >120:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FF4 text21 CODE >121:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FF5 text21 CODE >122:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FFA text21 CODE >122:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FFC text21 CODE >122:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FFE text21 CODE >123:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FFF text21 CODE >124:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+648 text20 CODE >5:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+648 text20 CODE >13:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+64B text20 CODE >14:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+64F text20 CODE >15:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+652 text20 CODE >15:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+654 text20 CODE >16:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+656 text20 CODE >18:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+65A text20 CODE >19:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+65D text20 CODE >19:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+65F text20 CODE >20:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+663 text20 CODE >22:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+665 text20 CODE >23:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+66B text20 CODE >24:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+66D text20 CODE >25:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+66E text20 CODE >26:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+66F text20 CODE >26:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+673 text20 CODE >26:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+675 text20 CODE >27:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+679 text20 CODE >25:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+67D text20 CODE >30:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+67E text20 CODE >30:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+682 text20 CODE >30:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+684 text20 CODE >31:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+686 text20 CODE >31:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+68A text20 CODE >31:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+68E text20 CODE >32:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+691 text20 CODE >32:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+694 text20 CODE >33:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+695 text20 CODE >35:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+696 text20 CODE >35:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+69A text20 CODE >35:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+69C text20 CODE >36:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+6A2 text20 CODE >38:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+6A7 text20 CODE >39:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+6AA text20 CODE >39:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+6AC text20 CODE >40:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+6B0 text20 CODE >41:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+F53 text19 CODE >15:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F53 text19 CODE >43:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F55 text19 CODE >45:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F59 text19 CODE >46:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F5B text19 CODE >46:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F5F text19 CODE >47:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F60 text19 CODE >47:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F64 text19 CODE >47:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F66 text19 CODE >48:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F67 text19 CODE >48:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F6B text19 CODE >48:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F6D text19 CODE >49:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F73 text19 CODE >52:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F77 text19 CODE >53:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+700 text18 CODE >728:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+700 text18 CODE >730:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+704 text18 CODE >733:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+706 text18 CODE >735:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+72C text18 CODE >736:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+735 text18 CODE >737:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+739 text18 CODE >737:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+742 text18 CODE >737:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+746 text18 CODE >737:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+74A text18 CODE >739:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+292 text17 CODE >194:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+292 text17 CODE >197:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+296 text17 CODE >200:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+298 text17 CODE >202:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+29C text17 CODE >203:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2A0 text17 CODE >204:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2A4 text17 CODE >205:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2A8 text17 CODE >206:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2AC text17 CODE >209:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2B1 text17 CODE >209:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2B5 text17 CODE >209:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2B9 text17 CODE >211:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2BB text17 CODE >212:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2BB text17 CODE >214:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2BC text17 CODE >218:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2C1 text17 CODE >218:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2C5 text17 CODE >218:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2C9 text17 CODE >220:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2CB text17 CODE >221:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2CB text17 CODE >223:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2CC text17 CODE >227:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2D1 text17 CODE >227:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2D5 text17 CODE >227:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2D9 text17 CODE >229:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2DB text17 CODE >230:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2DB text17 CODE >232:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2DC text17 CODE >236:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2E1 text17 CODE >236:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2E5 text17 CODE >236:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2E9 text17 CODE >238:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2EB text17 CODE >239:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2EB text17 CODE >241:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2EC text17 CODE >245:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2F3 text17 CODE >245:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2FB text17 CODE >245:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+2FF text17 CODE >247:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+303 text17 CODE >248:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+303 text17 CODE >250:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+306 text17 CODE >254:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+30B text17 CODE >256:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+30C text17 CODE >259:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+311 text17 CODE >261:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+312 text17 CODE >264:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+317 text17 CODE >266:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+318 text17 CODE >269:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+31D text17 CODE >271:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+31E text17 CODE >274:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+323 text17 CODE >276:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+324 text17 CODE >279:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+325 text17 CODE >283:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+329 text17 CODE >286:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+32D text17 CODE >287:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+32E text17 CODE >291:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+332 text17 CODE >293:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+333 text17 CODE >295:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+334 text17 CODE >297:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+334 text17 CODE >299:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+338 text17 CODE >301:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+33A text17 CODE >303:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+33B text17 CODE >305:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+33C text17 CODE >306:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+33D text17 CODE >308:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+34B text17 CODE >310:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+351 text17 CODE >312:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+356 text17 CODE >316:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+35C text17 CODE >318:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+361 text17 CODE >322:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+367 text17 CODE >324:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+368 text17 CODE >325:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+369 text17 CODE >326:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+36D text17 CODE >328:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+37B text17 CODE >303:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+383 text17 CODE >331:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+383 text17 CODE >333:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+387 text17 CODE >335:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+38C text17 CODE >336:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+39A text17 CODE >342:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7F6 text16 CODE >704:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7F9 text16 CODE >706:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7FD text16 CODE >708:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7FF text16 CODE >709:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F9F text15 CODE >711:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F9F text15 CODE >713:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FA0 text15 CODE >715:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FAE text15 CODE >717:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FB2 text15 CODE >717:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FB6 text15 CODE >713:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FC2 text15 CODE >713:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FC6 text15 CODE >719:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EF3 text14 CODE >721:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EF3 text14 CODE >723:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EF9 text14 CODE >724:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EFF text14 CODE >726:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+5DF text13 CODE >5:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+5DF text13 CODE >13:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+5E2 text13 CODE >14:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+5E6 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+5E9 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+5EB text13 CODE >16:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+5ED text13 CODE >18:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+5F1 text13 CODE >19:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+5F4 text13 CODE >19:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+5F6 text13 CODE >20:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+5FA text13 CODE >22:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+5FC text13 CODE >23:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+602 text13 CODE >24:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+604 text13 CODE >25:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+605 text13 CODE >26:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+606 text13 CODE >26:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+60A text13 CODE >26:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+60C text13 CODE >27:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+610 text13 CODE >25:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+614 text13 CODE >30:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+615 text13 CODE >30:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+619 text13 CODE >30:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+61B text13 CODE >31:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+61D text13 CODE >31:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+621 text13 CODE >31:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+625 text13 CODE >32:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+628 text13 CODE >32:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+62B text13 CODE >33:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+62C text13 CODE >35:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+62D text13 CODE >35:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+631 text13 CODE >35:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+633 text13 CODE >36:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+639 text13 CODE >38:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+63E text13 CODE >39:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+641 text13 CODE >39:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+643 text13 CODE >40:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+647 text13 CODE >41:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\awdiv.c
+F78 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F78 text12 CODE >43:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F7C text12 CODE >45:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F80 text12 CODE >46:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F82 text12 CODE >46:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F86 text12 CODE >47:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F87 text12 CODE >47:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F8B text12 CODE >47:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F8D text12 CODE >48:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F8E text12 CODE >48:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F92 text12 CODE >48:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F94 text12 CODE >49:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F9A text12 CODE >52:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+F9E text12 CODE >53:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul16.c
+3A5 text11 CODE >347:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3A5 text11 CODE >348:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3AB text11 CODE >348:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3B3 text11 CODE >348:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3BB text11 CODE >348:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3D5 text11 CODE >348:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3D9 text11 CODE >349:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3DD text11 CODE >350:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+6B1 text10 CODE >728:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+6B1 text10 CODE >730:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+6B5 text10 CODE >733:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+6B7 text10 CODE >735:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+6DF text10 CODE >736:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+6EA text10 CODE >737:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+6EE text10 CODE >737:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+6F7 text10 CODE >737:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+6FB text10 CODE >737:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+6FF text10 CODE >739:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7CD text9 CODE >545:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7CD text9 CODE >547:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7D1 text9 CODE >548:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7D2 text9 CODE >550:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7D6 text9 CODE >551:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7D8 text9 CODE >552:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7D9 text9 CODE >553:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7DB text9 CODE >555:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7DE text9 CODE >556:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7DF text9 CODE >557:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7E0 text9 CODE >558:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7E1 text9 CODE >563:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7E7 text9 CODE >564:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7E8 text9 CODE >568:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7E9 text9 CODE >570:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7EA text9 CODE >571:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7EB text9 CODE >572:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7EC text9 CODE >573:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7ED text9 CODE >574:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7EE text9 CODE >575:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7EF text9 CODE >576:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7F0 text9 CODE >577:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7F1 text9 CODE >581:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7F2 text9 CODE >582:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7F3 text9 CODE >583:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7F4 text9 CODE >584:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+7F5 text9 CODE >585:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F1F text8 CODE >591:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F1F text8 CODE >595:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F22 text8 CODE >596:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F23 text8 CODE >600:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F26 text8 CODE >601:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F27 text8 CODE >603:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F28 text8 CODE >607:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F2C text8 CODE >610:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F2D text8 CODE >611:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F34 text8 CODE >613:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3DE text7 CODE >619:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3DE text7 CODE >623:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3E1 text7 CODE >624:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3E2 text7 CODE >628:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3E4 text7 CODE >632:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3E8 text7 CODE >633:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3EC text7 CODE >634:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3F0 text7 CODE >638:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3F2 text7 CODE >639:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3F4 text7 CODE >640:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3F6 text7 CODE >641:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3F7 text7 CODE >642:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3F8 text7 CODE >646:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3FB text7 CODE >647:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3FC text7 CODE >649:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F00 text6 CODE >669:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F00 text6 CODE >671:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F03 text6 CODE >672:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F04 text6 CODE >673:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F08 text6 CODE >674:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F0C text6 CODE >675:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EE7 text5 CODE >655:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EE7 text5 CODE >657:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EEA text5 CODE >658:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EEC text5 CODE >659:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EED text5 CODE >660:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EF1 text5 CODE >661:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EF2 text5 CODE >663:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F35 text4 CODE >681:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F35 text4 CODE >682:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F38 text4 CODE >683:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F39 text4 CODE >684:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F3C text4 CODE >686:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F40 text4 CODE >687:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F41 text4 CODE >689:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F44 text4 CODE >690:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F47 text4 CODE >691:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F48 text4 CODE >692:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F4B text4 CODE >694:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F4E text4 CODE >695:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F51 text4 CODE >697:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F52 text4 CODE >698:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+74B text3 CODE >5:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+74B text3 CODE >13:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+74F text3 CODE >14:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+755 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+757 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+758 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+759 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+75D text3 CODE >17:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+75F text3 CODE >18:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+763 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+767 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+768 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+76C text3 CODE >21:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+76E text3 CODE >22:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+770 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+774 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+778 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+77B text3 CODE >23:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+77E text3 CODE >24:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+77F text3 CODE >26:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+780 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+784 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+786 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+78C text3 CODE >29:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+790 text3 CODE >30:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwdiv.c
+791 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+791 text2 CODE >12:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+799 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+79B text2 CODE >14:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+79C text2 CODE >15:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+79D text2 CODE >15:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7A1 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7A3 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7A7 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7AB text2 CODE >19:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7AD text2 CODE >19:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7B1 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7B5 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7B8 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7BB text2 CODE >21:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7BC text2 CODE >21:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7C0 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7C2 text2 CODE >22:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7C8 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+7CC text2 CODE >25:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\lwmod.c
+4F5 text1 CODE >505:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+4F8 text1 CODE >550:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+4FC text1 CODE >553:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+4FD text1 CODE >555:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+503 text1 CODE >558:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+50E text1 CODE >559:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+50F text1 CODE >565:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+510 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+51F text1 CODE >848:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+524 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+527 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+52A text1 CODE >848:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+52D text1 CODE >1285:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+539 text1 CODE >1287:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+53D text1 CODE >1288:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+541 text1 CODE >1289:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+544 text1 CODE >1289:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+546 text1 CODE >1331:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+548 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+55B text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+55F text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+564 text1 CODE >1333:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+56E text1 CODE >1464:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+574 text1 CODE >1465:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+57F text1 CODE >1498:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+583 text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+584 text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+5B4 text1 CODE >1550:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+5BF text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+5C8 text1 CODE >553:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+5DA text1 CODE >1564:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+5DE text1 CODE >1567:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\doprnt.c
+37 maintext CODE >352:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+37 maintext CODE >354:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+3C maintext CODE >355:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+41 maintext CODE >356:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+46 maintext CODE >357:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+4B maintext CODE >358:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+50 maintext CODE >359:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+55 maintext CODE >363:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+58 maintext CODE >365:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+5D maintext CODE >367:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+66 maintext CODE >368:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+6A maintext CODE >371:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+70 maintext CODE >373:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+75 maintext CODE >375:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+85 maintext CODE >376:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+90 maintext CODE >377:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+9B maintext CODE >378:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+A0 maintext CODE >381:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+B0 maintext CODE >382:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+BB maintext CODE >383:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+C6 maintext CODE >384:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+CB maintext CODE >387:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+DB maintext CODE >388:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+E6 maintext CODE >389:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F1 maintext CODE >390:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+F6 maintext CODE >391:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FB maintext CODE >394:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FE maintext CODE >395:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+FF maintext CODE >398:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+105 maintext CODE >400:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+10A maintext CODE >402:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+10F maintext CODE >403:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+11A maintext CODE >404:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+11F maintext CODE >405:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+124 maintext CODE >408:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+127 maintext CODE >409:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+128 maintext CODE >413:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+12E maintext CODE >415:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+133 maintext CODE >416:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+138 maintext CODE >418:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+13D maintext CODE >419:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+148 maintext CODE >420:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+14D maintext CODE >421:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+152 maintext CODE >424:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+155 maintext CODE >425:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+156 maintext CODE >430:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+15B maintext CODE >432:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+15C maintext CODE >433:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+15D maintext CODE >434:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+15E maintext CODE >435:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+15F maintext CODE >437:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+162 maintext CODE >440:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+16C maintext CODE >442:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+17A maintext CODE >444:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+17B maintext CODE >446:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+17E maintext CODE >448:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+187 maintext CODE >450:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+189 maintext CODE >451:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+194 maintext CODE >453:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+195 maintext CODE >455:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+19A maintext CODE >457:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+19B maintext CODE >458:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+19C maintext CODE >459:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+19D maintext CODE >460:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+19E maintext CODE >462:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1A1 maintext CODE >465:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1AB maintext CODE >467:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1B9 maintext CODE >469:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1BA maintext CODE >471:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1BD maintext CODE >473:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1C6 maintext CODE >475:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1CA maintext CODE >476:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1D5 maintext CODE >478:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1D6 maintext CODE >480:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1DC maintext CODE >482:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1DD maintext CODE >483:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1DE maintext CODE >484:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1DF maintext CODE >485:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1E0 maintext CODE >487:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1E3 maintext CODE >490:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1ED maintext CODE >492:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1FB maintext CODE >494:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1FC maintext CODE >496:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+1FF maintext CODE >498:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+208 maintext CODE >500:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+20C maintext CODE >501:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+217 maintext CODE >503:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+218 maintext CODE >505:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+21E maintext CODE >507:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+23D maintext CODE >508:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+23E maintext CODE >509:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+23F maintext CODE >510:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+240 maintext CODE >511:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+241 maintext CODE >513:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+244 maintext CODE >515:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+24A maintext CODE >516:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+255 maintext CODE >518:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+256 maintext CODE >520:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+25C maintext CODE >522:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+27B maintext CODE >523:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+27C maintext CODE >524:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+27D maintext CODE >525:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+27E maintext CODE >526:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+27F maintext CODE >528:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+282 maintext CODE >530:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+286 maintext CODE >533:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+286 maintext CODE >535:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+289 maintext CODE >536:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+28D maintext CODE >537:C:\Users\shagt\OneDrive\Escritorio\Semestre 7.5\Progra de micros\Proyectos\PROYECTO_02\Programa\PROYECTO_02.X\PROYECTO_02.c
+EDF clrtext CODE >976:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+EDF clrtext CODE >977:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+EE0 clrtext CODE >978:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+EE0 clrtext CODE >979:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+EE1 clrtext CODE >980:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+EE2 clrtext CODE >981:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+EE3 clrtext CODE >982:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+EE4 clrtext CODE >983:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+EE5 clrtext CODE >984:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+EE6 clrtext CODE >985:C:\Users\shagt\AppData\Local\Temp\xcAsj34.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+___awdiv@counter 37 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+___lwmod@counter 39 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__Hspace_0 1000 0 ABS 0 - -
+__Hspace_1 B6 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+__end_of_readToEEPROM 1E3E 0 CODE 0 text22 dist/default/production\PROYECTO_02.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+i1___awdiv@dividend 78 0 COMMON 1 cstackCOMMON dist/default/production\PROYECTO_02.X.production.o
+?_map 3B 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_ADIF 66 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_RBIF 58 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_T0IF 5A 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_TXIF 64 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+_main 6E 0 CODE 0 maintext dist/default/production\PROYECTO_02.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+start 20 0 CODE 0 init C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+?___wmul 2C 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_POT_VERDE 57 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+___awdiv@sign 38 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_setupTMR0 1E1A 0 CODE 0 text6 dist/default/production\PROYECTO_02.X.production.o
+__end_of_setupTMR2 1DE6 0 CODE 0 text5 dist/default/production\PROYECTO_02.X.production.o
+___wmul@multiplicand 2E 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+___awdiv@dividend 34 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+_EECON1bits 18C 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_CCPR1L 15 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_CCPR2L 1B 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+i1_parpadeo E00 0 CODE 0 text18 dist/default/production\PROYECTO_02.X.production.o
+__end_of___wmul 1F3E 0 CODE 0 text12 dist/default/production\PROYECTO_02.X.production.o
+_setupTMR0 1E00 0 CODE 0 text6 dist/default/production\PROYECTO_02.X.production.o
+_setupTMR2 1DCE 0 CODE 0 text5 dist/default/production\PROYECTO_02.X.production.o
+_EECON2 18D 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_EEDATA 10C 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__end_ofi1___awdiv D62 0 CODE 0 text20 dist/default/production\PROYECTO_02.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___awdiv@divisor 32 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+___lwmod@divisor 34 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__end_of___awdiv C90 0 CODE 0 text13 dist/default/production\PROYECTO_02.X.production.o
+__end_of___lwdiv F22 0 CODE 0 text3 dist/default/production\PROYECTO_02.X.production.o
+__end_of___lwmod F9A 0 CODE 0 text2 dist/default/production\PROYECTO_02.X.production.o
+__end_of_cadena 1F8E 0 CODE 0 text15 dist/default/production\PROYECTO_02.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+___stacklo 0 0 ABS 0 - C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+_dpowers 820 0 STRING 0 strings dist/default/production\PROYECTO_02.X.production.o
+_BAUDCTLbits 187 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+___lwdiv@quotient 32 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+i1___awdiv C90 0 CODE 0 text20 dist/default/production\PROYECTO_02.X.production.o
+___lwmod@dividend 36 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+_WPUBbits 95 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+start_initialization 26 0 CODE 0 cinit dist/default/production\PROYECTO_02.X.production.o
+_TRISCbits 87 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_state_eeprom 53 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+__end_ofi1_parpadeo E96 0 CODE 0 text18 dist/default/production\PROYECTO_02.X.production.o
+map@input 3B 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+clear_ram0 1DBE 0 CODE 0 clrtext dist/default/production\PROYECTO_02.X.production.o
+_SPBRGH 9A 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\PROYECTO_02.X.production.o
+i1___awdiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+i1___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\PROYECTO_02.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+i1___wmul 1EA6 0 CODE 0 text19 dist/default/production\PROYECTO_02.X.production.o
+_duty_cycle1 51 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+_duty_cycle2 4F 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+_duty_cycle3 4D 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+_duty_cycleP 4B 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+_duty_cycleT B0 0 BANK1 1 bssBANK1 dist/default/production\PROYECTO_02.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 6E 0 CODE 0 cinit -
+i1___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\PROYECTO_02.X.production.o
+__Hidloc 4008 0 IDLOC 5 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 81E 0 STRING 0 strings dist/default/production\PROYECTO_02.X.production.o
+___lwdiv@counter 31 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+_pwm_count1 63 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+_pwm_count2 62 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+_pwm_count3 61 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+_pwm_countP 60 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+_pwm_countT 5F 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_sprintf BBE 0 CODE 0 text1 dist/default/production\PROYECTO_02.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__end_ofi1___wmul 1EF0 0 CODE 0 text19 dist/default/production\PROYECTO_02.X.production.o
+_valor_adc 49 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 26 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 5 idloc -
+__Lstack 0 0 STACK 2 stack -
+_PORTBbits 6 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_PORTCbits 7 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_PORTDbits 8 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_setup_UART 1E6A 0 CODE 0 text4 dist/default/production\PROYECTO_02.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 20 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 20 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+___wmul 1EF0 0 CODE 0 text12 dist/default/production\PROYECTO_02.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_PR2 92 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_RB1 31 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_RB2 32 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__S0 1000 0 ABS 0 - -
+__S1 B6 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 524 0 CODE 0 text17 dist/default/production\PROYECTO_02.X.production.o
+_map 74A 0 CODE 0 text11 dist/default/production\PROYECTO_02.X.production.o
+i1___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\PROYECTO_02.X.production.o
+_cadena 1F3E 0 CODE 0 text15 dist/default/production\PROYECTO_02.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+sprintf@val 43 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__end_of_isr 74A 0 CODE 0 text17 dist/default/production\PROYECTO_02.X.production.o
+__end_of_map 7BC 0 CODE 0 text11 dist/default/production\PROYECTO_02.X.production.o
+_POT_AZUL 55 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+_POT_ROJO 59 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+saveToEEPROM@data 72 0 COMMON 1 cstackCOMMON dist/default/production\PROYECTO_02.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab 800 0 STRING 0 strings dist/default/production\PROYECTO_02.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\shagt\AppData\Local\Temp\xcAsj34.o
+__pdataBANK1 B4 0 BANK1 1 dataBANK1 dist/default/production\PROYECTO_02.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+i1___awdiv@quotient 22 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+_RCSTAbits 18 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+cadena@txt 2D 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__end_of_setup_UART 1EA6 0 CODE 0 text4 dist/default/production\PROYECTO_02.X.production.o
+sprintf@flag 41 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+sprintf@prec 42 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__ptext10 D62 0 CODE 0 text10 dist/default/production\PROYECTO_02.X.production.o
+__ptext11 74A 0 CODE 0 text11 dist/default/production\PROYECTO_02.X.production.o
+__ptext12 1EF0 0 CODE 0 text12 dist/default/production\PROYECTO_02.X.production.o
+__ptext13 BBE 0 CODE 0 text13 dist/default/production\PROYECTO_02.X.production.o
+__ptext14 1DE6 0 CODE 0 text14 dist/default/production\PROYECTO_02.X.production.o
+__ptext15 1F3E 0 CODE 0 text15 dist/default/production\PROYECTO_02.X.production.o
+__ptext16 FEC 0 CODE 0 text16 dist/default/production\PROYECTO_02.X.production.o
+__ptext17 524 0 CODE 0 text17 dist/default/production\PROYECTO_02.X.production.o
+__ptext18 E00 0 CODE 0 text18 dist/default/production\PROYECTO_02.X.production.o
+__ptext19 1EA6 0 CODE 0 text19 dist/default/production\PROYECTO_02.X.production.o
+__ptext20 C90 0 CODE 0 text20 dist/default/production\PROYECTO_02.X.production.o
+__ptext21 1F8E 0 CODE 0 text21 dist/default/production\PROYECTO_02.X.production.o
+__ptext22 1E1A 0 CODE 0 text22 dist/default/production\PROYECTO_02.X.production.o
+___awdiv BBE 0 CODE 0 text13 dist/default/production\PROYECTO_02.X.production.o
+___lwdiv E96 0 CODE 0 text3 dist/default/production\PROYECTO_02.X.production.o
+___lwmod F22 0 CODE 0 text2 dist/default/production\PROYECTO_02.X.production.o
+__pmaintext 6E 0 CODE 0 maintext dist/default/production\PROYECTO_02.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+i1___awdiv@divisor 76 0 COMMON 1 cstackCOMMON dist/default/production\PROYECTO_02.X.production.o
+___wmul@multiplier 2C 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+i1___awdiv@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+i1parpadeo@i 24 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+___lwdiv@divisor 2C 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+?i1___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\PROYECTO_02.X.production.o
+map@in_max 3F 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+map@in_min 3D 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+enviar_caracter@tecla 2C 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+_ADCON0bits 1F 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_ADCON1bits 9F 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__end_of__stringtab 820 0 STRING 0 strings dist/default/production\PROYECTO_02.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 7D 0 COMMON 1 bssCOMMON dist/default/production\PROYECTO_02.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_PIR1bits C 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__Lend_init 20 0 CODE 0 end_init -
+main@valorazulStr A8 0 BANK1 1 cstackBANK1 dist/default/production\PROYECTO_02.X.production.o
+map@output 45 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+main@valorverdeStr A4 0 BANK1 1 cstackBANK1 dist/default/production\PROYECTO_02.X.production.o
+main@valorrojoStr A0 0 BANK1 1 cstackBANK1 dist/default/production\PROYECTO_02.X.production.o
+end_of_initialization 66 0 CODE 0 cinit dist/default/production\PROYECTO_02.X.production.o
+__Hintentry 20 0 CODE 0 intentry -
+map@out_max 43 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+map@out_min 41 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 39 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+?___awdiv 32 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+___lwdiv@dividend 2E 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+?___lwdiv 2C 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+?___lwmod 34 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+_setupADC 1E3E 0 CODE 0 text8 dist/default/production\PROYECTO_02.X.production.o
+_setupPWM 7BC 0 CODE 0 text7 dist/default/production\PROYECTO_02.X.production.o
+_saveToEEPROM 1F8E 0 CODE 0 text21 dist/default/production\PROYECTO_02.X.production.o
+_parpadeo D62 0 CODE 0 text10 dist/default/production\PROYECTO_02.X.production.o
+__ptext1 9EA 0 CODE 0 text1 dist/default/production\PROYECTO_02.X.production.o
+__ptext2 F22 0 CODE 0 text2 dist/default/production\PROYECTO_02.X.production.o
+__ptext3 E96 0 CODE 0 text3 dist/default/production\PROYECTO_02.X.production.o
+__ptext4 1E6A 0 CODE 0 text4 dist/default/production\PROYECTO_02.X.production.o
+__ptext5 1DCE 0 CODE 0 text5 dist/default/production\PROYECTO_02.X.production.o
+__ptext6 1E00 0 CODE 0 text6 dist/default/production\PROYECTO_02.X.production.o
+__ptext7 7BC 0 CODE 0 text7 dist/default/production\PROYECTO_02.X.production.o
+__ptext8 1E3E 0 CODE 0 text8 dist/default/production\PROYECTO_02.X.production.o
+__ptext9 F9A 0 CODE 0 text9 dist/default/production\PROYECTO_02.X.production.o
+_sprintf 9EA 0 CODE 0 text1 dist/default/production\PROYECTO_02.X.production.o
+__end_of_setupADC 1E6A 0 CODE 0 text8 dist/default/production\PROYECTO_02.X.production.o
+__end_of_setupPWM 7FA 0 CODE 0 text7 dist/default/production\PROYECTO_02.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_parpadeo E00 0 CODE 0 text10 dist/default/production\PROYECTO_02.X.production.o
+sprintf@ap 40 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+sprintf@sp 45 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+?i1___awdiv 76 0 COMMON 1 cstackCOMMON dist/default/production\PROYECTO_02.X.production.o
+_menuMostrado 5C 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+__end_of__initialization 66 0 CODE 0 cinit dist/default/production\PROYECTO_02.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK1 7FA 0 CODE 0 idataBANK1 dist/default/production\PROYECTO_02.X.production.o
+__end_of_enviar_caracter 1000 0 CODE 0 text16 dist/default/production\PROYECTO_02.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_readToEEPROM 1E1A 0 CODE 0 text22 dist/default/production\PROYECTO_02.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\PROYECTO_02.X.production.o
+_TXSTAbits 98 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__Hend_init 26 0 CODE 0 end_init -
+sprintf@c 46 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+sprintf@f 3A 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+__end_of_main 524 0 CODE 0 maintext dist/default/production\PROYECTO_02.X.production.o
+_CCP2CONbits 1D 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+parpadeo@i 3D 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__end_of_dpowers 834 0 STRING 0 strings dist/default/production\PROYECTO_02.X.production.o
+_EEADR 10D 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__end_of_enter 1E00 0 CODE 0 text14 dist/default/production\PROYECTO_02.X.production.o
+_Bandera 5E 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+?_sprintf 3A 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_RCREG 1A 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__end_of_setup FEC 0 CODE 0 text9 dist/default/production\PROYECTO_02.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_carac 5D 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+interrupt_function 8 0 CODE 0 intentry dist/default/production\PROYECTO_02.X.production.o
+_enter 1DE6 0 CODE 0 text14 dist/default/production\PROYECTO_02.X.production.o
+_IOCBbits 96 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__end_of_saveToEEPROM 2000 0 CODE 0 text21 dist/default/production\PROYECTO_02.X.production.o
+_setup F9A 0 CODE 0 text9 dist/default/production\PROYECTO_02.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\PROYECTO_02.X.production.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__initialization 26 0 CODE 0 cinit dist/default/production\PROYECTO_02.X.production.o
+__pbssBANK0 49 0 BANK0 1 bssBANK0 dist/default/production\PROYECTO_02.X.production.o
+__pbssBANK1 AC 0 BANK1 1 bssBANK1 dist/default/production\PROYECTO_02.X.production.o
+_T2CONbits 12 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+__pstrings 800 0 STRING 0 strings dist/default/production\PROYECTO_02.X.production.o
+_enviar_caracter FEC 0 CODE 0 text16 dist/default/production\PROYECTO_02.X.production.o
+___wmul@product 30 0 BANK0 1 cstackBANK0 dist/default/production\PROYECTO_02.X.production.o
+_CCP1CONbits 17 0 ABS 0 - dist/default/production\PROYECTO_02.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 4F5 9EA 30B 2
+text4 0 F35 1E6A 1E 2
+text5 0 EE7 1DCE C 2
+text6 0 F00 1E00 D 2
+text8 0 F1F 1E3E 16 2
+text12 0 F78 1EF0 27 2
+text14 0 EF3 1DE6 D 2
+text15 0 F9F 1F3E 28 2
+text19 0 F53 1EA6 25 2
+text21 0 FC7 1F8E 39 2
+text22 0 F0D 1E1A 12 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 44 1
+cstackBANK1 1 A0 A0 16 1
+intentry 0 4 8 3FB 2
+reset_vec 0 0 0 3 2
+strings 0 400 800 F5 2
+clrtext 0 EDF 1DBE 8 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
